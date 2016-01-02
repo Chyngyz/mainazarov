@@ -1,11 +1,22 @@
 <div class="container">
 
-  <div>
-    <header-nav></header-nav>
-  </div>
 
-  <div class="jumbotron">
-    <h1>'Allo, 'Allo!</h1>
+  <header-nav></header-nav>
+
+  <h1 ng-click="main.pausePlay = !main.pausePlay">pause</h1>
+  <vid-bg
+          resources="main.resources"
+          poster="main.poster"
+          full-screen="main.fullScreen"
+          muted="main.muted"
+          z-index="main.zIndex"
+          play-info="main.playInfo"
+          pause-play="main.pausePlay">
+  </vid-bg>
+
+  <div class="logo">
+    <img src="assets/images/logo-lg.svg" alt="">
+    <p>Lorem ipsum dolor sit amet.</p>
   </div>
 
 
