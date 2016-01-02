@@ -3,10 +3,10 @@
 
   angular
     .module('mainazarov')
-    .directive('acmeNavbar', acmeNavbar);
+    .directive('headerNav', headerNav);
 
   /** @ngInject */
-  function acmeNavbar() {
+  function headerNav() {
     var directive = {
       restrict: 'E',
       templateUrl: 'app/components/navbar/navbar.html',
@@ -21,11 +21,8 @@
     return directive;
 
     /** @ngInject */
-    function NavbarController(moment) {
+    function NavbarController() {
       var vm = this;
-
-      // "vm.creation" is avaible by directive option "bindToController: true"
-      vm.relativeDate = moment(vm.creationDate).fromNow();
     }
   }
 
