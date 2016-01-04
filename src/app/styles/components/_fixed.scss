@@ -1,6 +1,5 @@
-.logo {
-  height: 255px;
-  width: 255px;
+.brand-wrap {
+  width: 355px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -10,7 +9,24 @@
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   img {
-    height: 100%;
-    width: 100%;
+    height: auto;
+    width: 255px;
+    margin:0 auto;
   }
+
+  hr {
+    border: 0;
+    border-bottom: 1px solid $c-prim;
+    background: transparent;
+  }
+}
+
+.brand-desc {
+  color: $c-white;
+}
+
+.brand-slogan {
+  color: $c-white;
+  font-size:rem(32);
+  line-height:rem(36);
 }

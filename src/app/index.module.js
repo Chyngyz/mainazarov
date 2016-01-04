@@ -2,6 +2,13 @@
   'use strict';
 
   angular
-    .module('mainazarov', ['ngAnimate', 'ngTouch', 'ngSanitize', 'ui.router', 'ngVidBg']);
+    .module('mainazarov', [
+      'ngAnimate',
+      'ngTouch',
+      'ngSanitize',
+      'ui.router',
+      'ngVidBg',
+      'ngAudio'
+    ]);
 
 })();
