@@ -1,54 +1,17 @@
-video.vidBg-body {
-  background-size: cover;
-  -webkit-transition: 1s opacity;
-  transition: 1s opacity;
-}
 
-video.vidBg-fade {
-  opacity: .5;
-}
+// Global Mixins and Vars
+@import "styles/base/vars";
+@import "styles/bourbon/bourbon";
 
-video.vidBg-fullScreen {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -100;
-  transform: translateX(-50%) translateY(-40%);
-}
+// Fonts
+@import "styles/base/fonts";
 
-video.vidBg-autoWidth {
-  width: 100%;
-  height: auto;
-}
+// General CSS
+@import "styles/base/normalize";
+@import "styles/base/base";
 
-.video-pattern {
-  position: absolute;
-  top:0;
-  left:0;
-  background-image: url('../assets/images/video-pattern.png');
-  background-repeat:repeat;
-  height: 100%;
-  width: 100%;
-  z-index:0;
-}
+// Components
+@import "styles/components/vidBG";
+@import "styles/components/fixed";
 
-.logo {
-  height: 300px;
-  width: 300px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  img {
-    height: 100%;
-    width: 100%;
-  }
-}
+
